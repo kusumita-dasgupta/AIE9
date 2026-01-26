@@ -71,6 +71,7 @@ Now imagine you’re about to start **week 3**’s work! Can you recall the step
 
 ```markdown
 git pull upstream main --allow-unrelated-histories # Get new lesson materials from AI Makerspace remote
+git pull --rebase upstream main # Since local main and upstream/main have diverged, so Git refuses to pull until I  tell it merge vs rebase
 #--do work--
 git add . # Add changes to git history / move changes to staging 
 git commit -m "Completed lesson X assignment" # Commit changes to git log with a helpful message
@@ -82,3 +83,9 @@ git push origin main # Push changes to our public remote so we can submit!
 - Can you look at the diagram above with confidence now?
 - What are three lessons you've learned from this?
 - What is one [lesson that you have not yet learned](https://www.loom.com/share/b34e4bd657f74892ac9a01f774113b4d)?
+
+### Errors
+deactivate
+source .venv/bin/activate
+uv sync
+
