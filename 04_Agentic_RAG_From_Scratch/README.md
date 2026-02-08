@@ -117,6 +117,14 @@ This pattern is critical for production systems requiring human oversight!
 **Resources:**
 - [LangGraph Human-in-the-Loop Guide](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/)
 
+## Human-in-the-Loop (HITL) Implementation Summary
+What I built
+
+I extended the agentic RAG system with a Human-in-the-Loop (HITL) approval gate using LangGraph’s native interrupt mechanism.
+The agent now pauses after the model proposes tool calls but before tools execute, allowing a human to explicitly approve, reject, or modify tool usage before the workflow continues.
+
+This mirrors real-world production requirements where tool execution (retrieval, calculations, API calls) must be reviewed for correctness, safety, or compliance.
+
 #### Submitting the Advanced Build:
 1. Complete all steps of the Main Assignment above
 2. Document your HITL implementation: what you built, how it works, and example outputs
