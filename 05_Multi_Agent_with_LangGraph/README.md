@@ -46,6 +46,24 @@ You'll need API keys for:
 # Build
 
 Run the notebook!
+## Architecture Diagram (Advanced Build: Personal Wellness Planner with File I/O)
+
+
+flowchart TD
+  U[User Request] --> S[Planner Supervisor (GPT-5.2)]
+
+  S --> E[Exercise Agent]
+  S --> N[Nutrition Agent]
+  S --> SL[Sleep Agent]
+  S --> ST[Stress Agent]
+
+  E --> FM[File Manager Agent]
+  N --> FM
+  SL --> FM
+  ST --> FM
+
+  FM --> F[(plans/*.md)]
+
 
 # Ship
 
