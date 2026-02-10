@@ -211,3 +211,60 @@ Follow these steps to prepare and submit your homework:
 When submitting your homework, provide:
 - Your Loom video link
 - The GitHub URL to your completed notebook
+
+## My Assignment Modifications
+
+In addition to completing the `Deep_Agents_Assignment.ipynb`, I implemented the Advanced Build: **AI Life Coach with Multi-Domain Expertise**.
+
+### New Files Added
+
+- `QUICKSTART.md`
+  - Documents architecture overview, memory namespace strategy, and example outputs
+  - Includes Deep Agent architecture diagram
+
+### New Implementation Components
+
+- Multi-domain Life Coach system with specialist subagents:
+  - Career Coach
+  - Relationship Coach
+  - Finance Coach
+  - Wellness Coach
+
+- Advanced planning system using structured todos with phases and dependencies
+
+### Context Management
+
+Created a structured workspace organization:
+workspace/
+users/<user_id>/
+user_profile/
+assessments/
+plans/
+progress/
+resources/
+
+These folders are used to store plans, assessments, check-ins, and resources to prevent context overflow.
+
+### Memory Implementation
+
+Used LangGraph Store with namespaces:
+
+- `(user_id, "profile")`
+- `(user_id, "goals")`
+- `(user_id, "progress")`
+- `(user_id, "preferences")`
+- `("coaching", "patterns")` for anonymized shared insights
+
+### Generated Files
+
+During execution, the system generates:
+
+- Assessment reports
+- 90-day action plans
+- Weekly check-ins and summaries
+- Wellness and life-planning artifacts in the `workspace/` directory
+
+No external data files or custom skills directories were added beyond the notebook implementation.
+
+
+
