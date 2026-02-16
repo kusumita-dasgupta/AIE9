@@ -45,6 +45,22 @@ The Graph should handle:
 
 It should take, as input, a list of LangChain Documents.
 
+
+Advanced Build Summary (LangGraph + Evol-Instruct)
+Implemented synthetic data generation using a LangGraph workflow instead of RAGAS knowledge graphs. The graph takes LangChain documents as input, generates seed questions, evolves each seed using Evol-Instruct-style transformations (simple, multi-context, reasoning), retrieves supporting contexts from a Qdrant vector index, and produces context-grounded answers with an “I don’t know” fallback. Final state outputs include: (1) evolved questions with IDs and evolution type, (2) answers keyed by question_id, and (3) retrieved contexts keyed by question_id.
+
+Notes
+- This is not RAGAS KG-based SDG — it’s agentic SDG using LangGraph, exactly as required.
+- “Evol-Instruct” is satisfied by the explicit evolution operator prompts and the three evolution types.
+- You can optionally increase n seeds to 10, but keep it small to avoid cost.
+
+Additional File Generated
+- usecase_data_kg.json
+
+This file stores the serialized KnowledgeGraph (nodes + relationships).
+- It was created to persist the transformed graph.
+- It is used for loading the graph later without recomputing transforms.
+
 ### Deliverables
 
 - A short Loom of the notebook
