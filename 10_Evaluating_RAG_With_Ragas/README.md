@@ -131,6 +131,16 @@ When submitting, provide:
 - Your Loom video link demonstrating the semantic chunking implementation
 - The GitHub URL to your completed notebook with the Advanced Build
 
+Advanced Build: Semantic Chunking
+For the Advanced buiild I create a new notebook:
+https://github.com/kusumita-dasgupta/AIE9/blob/main/10_Evaluating_RAG_With_Ragas/Advanced_Semantic_Chunking_RAGAS.ipynb
+
+I compared a baseline fixed-size chunking RAG system with a semantic chunking strategy (greedy sentence merging based on cosine similarity thresholds). Both used naive retrieval (k=3) and were evaluated with RAGAS.
+
+Semantic chunking improved context precision (+0.18), meaning retrieved chunks were more coherent and less noisy. However, context recall (-0.24) decreased, leading to lower answer relevancy and correctness.
+
+Conclusion: Semantic chunking increases precision but reduces coverage under low-k naive retrieval. Proper tuning (higher k or reranking) is needed to fully benefit from it.
+
 </details>
 
 # Submitting Your Homework
