@@ -49,6 +49,15 @@ When submitting, provide:
 - The GitHub URL to your completed Advanced Build
 
 Have fun!
+
+Advanced Build Details :
+Implemented Evol-Instruct style synthetic dataset generation using a LangGraph pipeline instead of Ragas KG generation. The graph generates evolved questions (simple, multi-context, reasoning), attaches reference contexts from the corpus, and produces ground-truth answers constrained to those contexts. Final outputs include: (1) list of evolved questions with IDs and evolution types, (2) list of answers keyed by question ID, and (3) list of reference contexts keyed by question ID. The system takes a list of LangChain Documents as input and emits deterministic structured JSON outputs for grading and downstream evaluation.
+
+New files added :
+  i. evolved_questions.json
+  ii. answers.json
+  iii. contexts.json
+
 </details>
 
 # Ship 🚢

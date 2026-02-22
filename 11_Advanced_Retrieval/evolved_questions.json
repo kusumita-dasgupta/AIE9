@@ -1,0 +1,152 @@
+[
+  {
+    "question_id": "baaf1212-5761-4b8d-ba5c-f5377a54f988",
+    "evolution_type": "simple",
+    "question": "According to the sample day of balanced eating, what beverage is consumed in the evening?"
+  },
+  {
+    "question_id": "dfd2906c-bd62-411e-a71d-5027e8b74ac9",
+    "evolution_type": "simple",
+    "question": "According to Chapter 3, what is the recommended approach when starting a new exercise routine?"
+  },
+  {
+    "question_id": "30055357-518c-40fa-94e7-35736da05646",
+    "evolution_type": "simple",
+    "question": "How many times should you perform shoulder shrugs according to the exercises listed?"
+  },
+  {
+    "question_id": "bbfc2bba-2a52-46fd-ab2e-066b11a41513",
+    "evolution_type": "simple",
+    "question": "What are two recommended quick energy boosters listed in the context?"
+  },
+  {
+    "question_id": "6b14a8b9-fba4-4d2a-8d9b-aeeff1853ccd",
+    "evolution_type": "simple",
+    "question": "Which fermented foods are mentioned as supporting gut health in the provided context?"
+  },
+  {
+    "question_id": "b370db75-fed9-44e9-a6e1-85c32361e274",
+    "evolution_type": "simple",
+    "question": "What is the recommended duration to hold each pelvic tilt exercise according to the instructions?"
+  },
+  {
+    "question_id": "b1629944-3816-4d84-83b8-3832f1b5a821",
+    "evolution_type": "simple",
+    "question": "What are some signs of poor work-life balance mentioned in the context?"
+  },
+  {
+    "question_id": "91397d9f-6fda-46f0-b4fd-f00948e404e1",
+    "evolution_type": "simple",
+    "question": "What are the three components of the habit loop described in Chapter 13?"
+  },
+  {
+    "question_id": "763b28f7-22c1-4a1d-9827-2606bac1f85e",
+    "evolution_type": "simple",
+    "question": "What percentage of adults experience lower back pain at some point in their lives according to Chapter 2?"
+  },
+  {
+    "question_id": "85ba9835-4c01-406b-9634-c7bf3c075428",
+    "evolution_type": "simple",
+    "question": "According to the context, how many days per week should adults perform muscle-strengthening activities?"
+  },
+  {
+    "question_id": "e78b2073-23f7-4737-a861-e5e7631b2dcd",
+    "evolution_type": "reasoning",
+    "question": "What is the primary purpose of performing pelvic tilts while lying on your back with knees bent?"
+  },
+  {
+    "question_id": "1b2ab0bf-ee12-446d-bce1-ee4b0fcc0d6e",
+    "evolution_type": "reasoning",
+    "question": "Based on the weekly meal planning steps, why is it beneficial to choose main dishes that can provide leftovers?"
+  },
+  {
+    "question_id": "bd6bfb73-d744-45ad-89ef-b4395f66ccce",
+    "evolution_type": "reasoning",
+    "question": "Based on the sample day's meals, what can be inferred about the person's approach to maintaining hydration throughout the day?"
+  },
+  {
+    "question_id": "c9664d28-3f70-4454-9ed6-3bcc4133a85b",
+    "evolution_type": "reasoning",
+    "question": "Based on the importance of a healthy digestive system for overall wellness, which natural remedy might indirectly support digestive health by promoting relaxation and reducing stress?"
+  },
+  {
+    "question_id": "6fef40fc-a119-4ee9-951b-74c9d56ffb83",
+    "evolution_type": "reasoning",
+    "question": "Based on the strategies for better balance and the benefits of social connections, what is a likely reason for prioritizing personal time and disconnecting from work outside of regular hours?"
+  },
+  {
+    "question_id": "4009903d-9256-4d7f-824f-2c0010727272",
+    "evolution_type": "reasoning",
+    "question": "Based on the recommended weekly activity guidelines, how many days per week should an adult include muscle-strengthening exercises in their routine?"
+  },
+  {
+    "question_id": "51308209-0d5d-464a-af81-6618e3ea8531",
+    "evolution_type": "reasoning",
+    "question": "Based on the immune-boosting strategies provided, which lifestyle change would most likely help reduce the risk of illness by supporting overall health and immune function?"
+  },
+  {
+    "question_id": "70e8566f-f515-4600-a514-53b7e54716b0",
+    "evolution_type": "reasoning",
+    "question": "Based on the information provided, why is including a variety of colorful fruits and vegetables important in meal planning for wellness?"
+  },
+  {
+    "question_id": "938a3eed-b994-4fc5-a444-c891ab4903dc",
+    "evolution_type": "reasoning",
+    "question": "Based on the digital wellness practices, what is a likely benefit of creating tech-free zones in your home?"
+  },
+  {
+    "question_id": "7d3ca87c-97e3-4a0f-b29f-1a3d2474e2b5",
+    "evolution_type": "reasoning",
+    "question": "Based on the daily wellness checklist, what is the minimum amount of sleep recommended for maintaining good health?"
+  },
+  {
+    "question_id": "465517ef-0bcf-4a7f-bbc9-1361ebee4283",
+    "evolution_type": "multi_context",
+    "question": "Considering that a strong immune system benefits from gut health-supporting foods such as fermented foods and prebiotics, and that establishing healthy habits can enhance overall well-being, which type of meditation\u2014such as focused attention or body scan\u2014could be integrated into a daily routine to support both gut health and immune function, and why?"
+  },
+  {
+    "question_id": "39a80c86-65eb-408d-85ec-f4c3cc6c40c7",
+    "evolution_type": "multi_context",
+    "question": "Based on the sample day of balanced eating and the tips for building new habits, what is a simple way to incorporate a hydration habit into your morning routine to improve your overall wellness and set a positive tone for the day?"
+  },
+  {
+    "question_id": "efe41ab3-dccc-421d-844f-b5c6f530bfb8",
+    "evolution_type": "multi_context",
+    "question": "Considering the signs of poor work-life balance such as constant exhaustion and physical health decline, how might inadequate sleep cycles\u2014specifically insufficient deep sleep and REM sleep\u2014contribute to these issues, and what is the recommended amount of sleep adults should aim for each night to support overall well-being?"
+  },
+  {
+    "question_id": "7418cc66-7d21-4dca-b44e-8a4ed3ba4310",
+    "evolution_type": "multi_context",
+    "question": "Based on the principles of exercise and nutrition, how can applying progressive overload during your workout enhance the benefits of a balanced diet in improving overall health and physical fitness?"
+  },
+  {
+    "question_id": "b6b90f1a-d889-4cf9-84e1-f3e783eba826",
+    "evolution_type": "multi_context",
+    "question": "Based on the Daily Wellness Checklist and the science of habit formation, which component of the habit loop is most directly involved when you set a specific cue, such as placing your water bottle on your desk, to remind yourself to drink 8 glasses of water daily and reinforce this behavior over time?"
+  },
+  {
+    "question_id": "57c6622b-62aa-40d5-a0a0-5b0256a045da",
+    "evolution_type": "multi_context",
+    "question": "Considering that stress can cause physical symptoms such as fatigue and sleep problems, and knowing that adults need 7-9 hours of sleep in cycles including REM and non-REM stages, how might chronic stress impact the quality of sleep and overall mental wellness if an individual consistently gets only 5 hours of sleep per night? Explain your reasoning based on both contexts."
+  },
+  {
+    "question_id": "e4466a64-f955-4e9e-86b3-da69daff3a29",
+    "evolution_type": "multi_context",
+    "question": "Considering the beginner weekly exercise schedule and the meal planning steps, on which days would it be most practical to prepare and cook main dishes in advance to accommodate busy days, and why?"
+  },
+  {
+    "question_id": "a3027771-6276-4c2d-bf1c-bd15ab3dad61",
+    "evolution_type": "multi_context",
+    "question": "Considering the physical symptoms of stress such as muscle tension and headaches, which specific exercise from the neck and shoulder tension relief techniques can help alleviate these symptoms caused by chronic stress, and how does it address the physical response described in the stress management context?"
+  },
+  {
+    "question_id": "b922ddb8-ddcf-47d5-aee6-f93acc186b69",
+    "evolution_type": "multi_context",
+    "question": "How might incorporating regular pelvic tilts into your routine, along with practicing mindfulness and managing stress through activities like social connections and hobbies, contribute to overall physical and mental well-being?"
+  },
+  {
+    "question_id": "339ef171-f522-4410-a29a-50c6b2e547ca",
+    "evolution_type": "multi_context",
+    "question": "If someone experiences neck and shoulder tension from desk work and also feels anxious and overwhelmed, which combination of exercises from Context A and stress management strategies from Context B could help alleviate both physical and mental symptoms?"
+  }
+]
