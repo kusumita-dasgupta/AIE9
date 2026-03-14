@@ -83,7 +83,9 @@ What is the difference between serverless and dedicated endpoints?
 
 #### ✅ Answer:
 
-_(insert your answer here)_
+A serverless endpoint is a shared, provider-managed inference endpoint where compute is allocated dynamically when requests arrive. It is easy to use because there is no deployment setup, scaling is handled automatically, and billing is typically usage-based. However, because the infrastructure is shared, latency and throughput can vary depending on demand and cold start behavior.
+
+A dedicated endpoint is a deployed model instance with reserved capacity for your application. It gives more predictable performance, better control over scaling behavior, and more reliable token throughput for production workloads. The trade-off is that it costs more because the infrastructure is provisioned specifically for you, even when traffic is low or idle.
 
 ### ❓ Question #2:
 
@@ -91,8 +93,7 @@ Why is it important to consider token throughput and latency when choosing an LL
 
 #### ✅ Answer:
 
-_(insert your answer here)_
-
+Token throughput and latency directly affect user experience. Latency determines how quickly the model starts responding, and token throughput determines how fast the full answer is generated once output begins. In user-facing applications like chat assistants, search copilots, and RAG systems, slow first-token response or slow generation can make the application feel unresponsive and frustrating. Good latency and throughput matter not only for perceived quality, but also for concurrency, scalability, and cost efficiency when many users are using the system at once.
 ## Activity 1: RAGAS Evaluation with Cost Analysis
 
 Use RAGAS to evaluate your open-source Fireworks AI powered RAG app against an OpenAI `gpt-4.1-mini` powered equivalent. Compare retrieval quality, answer faithfulness, and end-to-end accuracy across both providers.

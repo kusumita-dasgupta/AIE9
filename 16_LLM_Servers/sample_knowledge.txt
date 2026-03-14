@@ -1,0 +1,11 @@
+Retrieval-Augmented Generation (RAG) is a pattern where an LLM is given retrieved external context before generating an answer.
+
+Serverless endpoints are shared managed endpoints that scale automatically and are easy to use, but latency and throughput may vary.
+
+Dedicated endpoints provide reserved capacity and more predictable performance, but they cost more because infrastructure is allocated specifically for your workload.
+
+Token throughput refers to how many output tokens a model can generate per second. Latency refers to how quickly the model starts responding.
+
+Embedding models convert text into vectors so that semantically similar pieces of text can be retrieved during search.
+
+Fireworks AI provides managed inference endpoints for open-source models such as gpt-oss-20b and embedding models such as qwen3-embedding-4b.
