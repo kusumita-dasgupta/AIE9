@@ -107,9 +107,9 @@ Here's a template to get you started:
 I am thrilled to announce that I have just built and shipped an MCP server with OAuth authentication! 🎉🤖
 
 🔍 Three Key Takeaways:
-1️⃣
-2️⃣
-3️⃣
+1️⃣ I learned how MCP servers expose tools in a standardized way so AI clients can securely interact with application functionality like product browsing and cart management.
+2️⃣ I learned why OAuth is critical in MCP: it authenticates the client and ensures tool actions are performed in the correct user context instead of allowing unauthenticated access.
+3️⃣ I learned the difference between MCP and A2A: MCP is for agent-to-tool/service interaction, while A2A is for communication and coordination between independent agents.
 
 Let's continue pushing the boundaries of what's possible in the world of AI and tool integration. Here's to many more innovations! 🚀
 Shout out to @AIMakerspace !
@@ -139,7 +139,9 @@ Why is OAuth important for MCP servers, and what security considerations should 
 
 #### ✅ Answer:
 
-_(insert your answer here)_
+OAuth is important for MCP servers because it provides a secure authentication and authorization mechanism that ensures only verified clients or users can access the tools exposed by the MCP server. Since MCP servers allow AI agents to call real system capabilities such as databases, APIs, or transactional operations, OAuth helps enforce identity verification and permission boundaries before any tool is executed.
+
+When exposing tools to AI clients, several security considerations are important. First, tools should follow the principle of least privilege, meaning the AI client should only have access to the minimal set of operations required. Second, sensitive operations such as payments or data modifications should require additional validation or user confirmation. Third, proper input validation and schema enforcement should be used to prevent malicious or unintended tool usage. Finally, secure token management and HTTPS communication should be enforced to prevent credential leakage and unauthorized access.
 
 ### ❓ Question #2:
 
@@ -147,8 +149,11 @@ What is the Agent-to-Agent (A2A) protocol, and how does it differ from MCP in te
 
 #### ✅ Answer:
 
-_(insert your answer here)_
+The Agent-to-Agent (A2A) protocol is a communication framework that allows independent AI agents to discover, communicate with, and delegate tasks to other agents in a standardized way. It enables agents to exchange capabilities, coordinate workflows, and collaborate across systems using agent cards and interoperable protocols.
 
+A2A differs from MCP in its purpose and architecture. MCP is primarily designed for connecting an AI client to tools, resources, or services exposed by a server. It focuses on enabling an agent to use structured tools such as APIs or databases. A2A, on the other hand, focuses on communication between autonomous agents rather than tool invocation. In A2A architectures, agents can delegate tasks, request capabilities from other agents, and coordinate complex workflows across distributed systems.
+
+You would choose A2A when building multi-agent systems where different agents specialize in different tasks and need to collaborate with each other. MCP is better suited for cases where a single agent needs to access tools or services exposed by a server.
 ## Activity 1: Extend the MCP Server
 
 Add at least one new tool to the cat shop MCP server (e.g., `search_products`, `update_cart_quantity`, or `get_order_history`). Ensure the new tool integrates properly with the existing database and OAuth authentication. Demo the new tool through an MCP client and include it in your Loom video.
@@ -158,3 +163,5 @@ Add at least one new tool to the cat shop MCP server (e.g., `search_products`, `
 Build a custom MCP client that connects to the cat shop server over Streamable HTTP, authenticates via OAuth, and orchestrates a multi-step shopping flow (browse → add to cart → checkout). Compare the developer experience of MCP-based tool integration vs. traditional REST API calls.
 
 Include your findings and a demo in your Loom video.
+
+I extended the MCP server by adding a new tool called update_cart_quantity(product_id, quantity). I implemented the tool in app/tools.py, where the existing MCP tools are already defined. The tool integrates with the existing SQLite database by updating records in the cart_items table. It also integrates with the existing OAuth authentication flow by using the current _get_username() helper, which maps the access token to the authenticated user before performing the cart update. This ensures the cart modification is scoped to the logged-in user and remains protected by the same authenticated MCP server setup.
