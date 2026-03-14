@@ -1,23 +1,27 @@
 {
-  "version": 1,
-  "dependencies": ["."],
-  "env": ".env",
-  "python_version": "3.13",
   "graphs": {
-    "simple_agent": "app.graphs.simple_agent:graph",
-    "agent_with_helpfulness": "app.graphs.agent_with_helpfulness:graph"
+    "simple_agent": "./app/graphs/simple_agent.py:graph",
+    "agent_with_helpfulness": "./app/graphs/helpfulness_agent.py:graph",
+    "vibe_checker_agent": "./app/graphs/vibe_checker_agent.py:graph"
   },
-  "assistants": {
-    "agent": {
-      "graph_id": "simple_agent",
+  "assistants": [
+    {
+      "assistant_id": "simple_agent",
       "name": "Simple Agent",
-      "description": "Agent with tools using conditional tool-calling."
+      "graph_id": "simple_agent",
+      "description": "A basic agent with tool access"
     },
-    "agent_helpful": {
+    {
+      "assistant_id": "agent_with_helpfulness",
+      "name": "Agent with Helpfulness",
       "graph_id": "agent_with_helpfulness",
-      "name": "Agent with Helpfulness Check",
-      "description": "Agent that uses tools and performs a helpfulness check with loop limit."
+      "description": "Agent with helpfulness evaluation"
+    },
+    {
+      "assistant_id": "vibe_checker_agent",
+      "name": "Vibe Checker Agent",
+      "graph_id": "vibe_checker_agent",
+      "description": "An agent that rewrites answers if the response vibe is unclear or weak"
     }
-  }
+  ]
 }
-
